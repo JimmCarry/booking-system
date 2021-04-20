@@ -1,0 +1,330 @@
+body {
+    width: 100%;
+    font-size: 14px;
+    min-height: 100vh;
+    
+    align-items: center;
+    padding: 1em 0;
+    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 0%, rgba(83,44,44,1) 100%);
+}
+.today {
+    background-color: #bada55;
+    font-size: 2em;
+    
+}
+svg {
+    display: block;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 1px solid transparent;
+}
+main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+ul li {
+    list-style: none;
+}
+.movies_card li {
+    width: 80%;
+    margin: 15px auto;
+}
+
+svg:hover {
+    
+    background-color: #bada55;
+    border: 1px solid black;
+}
+/* OPTIONS OF CALEENDAR DAY */
+.date {
+    border: 1px solid grey;
+    background-color: #fff;
+    border-radius: 5px;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.date span {
+    font-size: 4em;
+    font-weight: 800;
+}
+.date h1 {
+    font-size: 1.5em;
+    background-color: red;
+    padding: 0.2em 1.5em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid black;
+    color: #fff; 
+    font-weight: 800;
+    
+   
+}
+.date h2, h5 {
+    padding: 3px 0px;
+}
+.days {
+    display: flex;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.days div {
+    padding: 0.5em;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+.movies_card ul li {
+    width: 20%;
+}
+
+.popup-wrapper {
+    display: none;
+    background-color: #fff;
+    padding: 1em;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.cards {
+    display: flex;
+}
+.card {
+    padding: 0 5px;
+    margin: 0 auto;
+    opacity: 1;
+}
+.seat {
+    width: 20%;
+}
+.movie_card {
+    height: 320px;
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+/* SEATS OF CINEMA */
+.seats {
+    display: flex;
+}
+
+
+label {
+    display: block;
+}
+.seat-selected {
+    background-color: #bada55;
+}
+.orderTickets {
+    background-color: red;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    color: #fff;
+    width: 118px;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 5px 25px;
+    cursor: pointer;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.orderTickets:hover {
+    color: #000;
+    background-color: #bada55;
+}
+/* NON-FUNCTION CONTENT */
+.red {
+    color: red;
+}
+.previously {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.previouslyBtn {
+    padding: 0 0.2em;
+    color: grey;
+}
+.nextly {
+    display: flex;
+}
+.nextBtn {
+    padding: 0 0.2em;
+}
+.choose_seats {
+    background-color: red;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    color: #fff;
+    width: 118px;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 1em;
+    border-radius: 15px;
+    padding: 5px 15px;
+    cursor: pointer;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.choose_seats:hover {
+    
+    color: #000;
+    background-color: #bada55;
+}
+
+.seats-title span {
+    border: 1px solid #000;
+    color: #fff;
+    background-color: red;
+    font-weight: 800;
+    font-size: 1em;
+    border-radius: 25px;
+    padding: 5px 8px;
+    cursor: pointer;
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.seats-title p {
+    padding: 10px 0;
+}
+.seats-title span:hover {
+    color: #000;
+    background-color: #bada55;
+}
+#seats .seat {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 0.2em;
+    border: 1px solid black;
+    
+}
+#seats .seat-selected {
+    background-color: #bada55;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 0.2em;
+    border: 1px solid black;
+    
+}
+#seats .seat-occupied {
+    background-color: grey;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 0.2em;
+    border: 1px solid black;
+    
+}
+#seats .seat span {
+    background-color: transparent;
+}
+
+
+.card_option {
+    display: flex;
+
+}
+.card_option img {
+    
+    max-height: 200px;
+}
+.movie_info {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 0.5em;
+}
+.movie_card h1 {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.movie_info p {
+    color: gray;
+}
+.popup-wrapper {
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+}
+
+@media screen and ( max-width: 760px ) {
+    body {
+        text-align: center;
+    }
+    
+    .movies_card ul li {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .cards {
+        display: block;
+    }
+    .seats {
+        padding-bottom: 1em;
+    }
+    
+
+    .card {
+        width: 80%;
+        margin: 15px auto;
+        
+    }
+    .card h2 {
+        padding: 0.5em 0;
+        margin-top: 0.7em;
+        background-color: #f7f3f3;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .seats li {
+        margin: 0.5em;
+    }
+}
+@media screen and (min-width: 760px ) {
+    .cards {
+        display: block;
+    }
+    .movies_card ul li {
+        width: 70%;
+        margin: 20px auto;
+    }
+}
+@media screen and (min-width: 900px ) {
+    .cards {
+        display: block;
+    }
+    .movies_card ul li {
+        width: 60%;
+        margin: 20px auto;
+    }
+}
+@media screen and (min-width: 1100px ) {
+    .cards {
+        display: flex;
+    }
+    .card_option img {
+        
+        max-height: 135px;
+    }
+    .card_option {
+        display: block;
+        
+    }
+}
